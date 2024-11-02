@@ -1,0 +1,44 @@
+[
+  {
+    "service_id": "001",
+    "serviceImage": "../src/assets/home/recruitment.avif",
+    "serviceName": "Recruitment & Staffing",
+    "serviceDescription": "Professional recruitment and staffing services to find top talent.",
+    "servicePrice": "$200"
+  },
+  {
+    "service_id": "002",
+    "serviceImage": "../src/assets/home/training.jfif",
+    "serviceName": "Employee Training",
+    "serviceDescription": "Custom training programs to enhance workforce skills.",
+    "servicePrice": "$150"
+  },
+  {
+    "service_id": "003",
+    "serviceImage": "../src/assets/home/payroll.jfif",
+    "serviceName": "Payroll Management",
+    "serviceDescription": "Efficient payroll processing and benefits administration.",
+    "servicePrice": "$300"
+  },
+  {
+    "service_id": "004",
+    "serviceImage": "../src/assets/home/performance.webp",
+    "serviceName": "Performance Management",
+    "serviceDescription": "Boost employee productivity with performance evaluation tools.",
+    "servicePrice": "$250"
+  },
+  {
+    "service_id": "005",
+    "serviceImage": "../src/assets/home/compliance.jfif",
+    "serviceName": "Compliance & Legal Advisory",
+    "serviceDescription": "Ensure adherence to labor laws and regulatory standards.",
+    "servicePrice": "$350"
+  },
+  {
+    "service_id": "006",
+    "serviceImage": "../src/assets/home/compensation.jfif",
+    "serviceName": "Compensation Planning",
+    "serviceDescription": "Develop competitive salary structures to attract talent.",
+    "servicePrice": "$280"
+  }
+]

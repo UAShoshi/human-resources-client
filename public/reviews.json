@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "1",
+    "name": "John Doe",
+    "details": "Exceptional HR services provided by a dedicated team. Recruitment and onboarding were seamless, helping us to quickly build a talented and motivated workforce. Their approach is professional and tailored to our needs, ensuring that the process was smooth and efficient.",
+    "rating": 5
+  },
+  {
+    "_id": "2",
+    "name": "Jane Smith",
+    "details": "Their training programs significantly improved our team’s capabilities. The programs were well-structured, engaging, and relevant to our industry, making a positive impact on employee performance and satisfaction.",
+    "rating": 4
+  },
+  {
+    "_id": "3",
+    "name": "Carlos Gomez",
+    "details": "The performance management support they offer is top-notch, allowing us to align employee goals with company objectives. Our team is more productive and focused, thanks to the clear strategies provided by this HR service.",
+    "rating": 5
+  },
+  {
+    "_id": "4",
+    "name": "Emily Chen",
+    "details": "Professional HR solutions tailored to fit our unique organizational needs. Their services are reliable and their team goes above and beyond to deliver results that meet our standards.",
+    "rating": 4
+  }
+]

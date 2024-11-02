@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "1",
+    "image": "../src/assets/Features/attendance.webp",
+    "name": "Attendance Form & Log"
+  },
+  {
+    "_id": "2",
+   "image": "../src/assets/Features/department.webp",
+    "name": "Department Management" 
+  },
+  {
+    "_id": "3",
+    "image": "../src/assets/Features/performance-appraisal.webp",
+     "name": "Performance Appraisal Record" 
+   },
+   {
+    "_id": "4",
+    "image": "../src/assets/Features/record.webp",
+     "name": "Record Of Leave Application" 
+   },
+   {
+    "_id": "5",
+    "image": "../src/assets/Features/notice.webp",
+     "name": "Notice Board For Employees" 
+   },
+   {
+    "_id": "6",
+    "image": "../src/assets/Features/year.webp",
+     "name": "Year-wise Award system" 
+   },
+   {
+    "_id": "7",
+    "image": "../src/assets/Features/power.webp",
+     "name": "Power Pack Recruitment Tool" 
+   },
+   {
+    "_id": "8",
+    "image": "../src/assets/Features/rules.webp",
+     "name": "Rules Setup" 
+   },
+   {
+    "_id": "9",
+    "image": "../src/assets/Features/point-setting.webp",
+     "name": "Rules Setup" 
+   },
+   {
+    "_id": "10",
+    "image": "../src/assets/Features/mobile-app.webp",
+     "name": "Rules Setup" 
+   },
+   {
+    "_id": "11",
+    "image": "../src/assets/Features/employee-salary.webp",
+     "name": "Rules Setup" 
+   },
+   {
+    "_id": "12",
+    "image": "../src/assets/Features/project-management.webp",
+     "name": "Point Setting" 
+   }
+]
