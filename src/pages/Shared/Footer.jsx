@@ -7,7 +7,7 @@ const Footer = () => {
         <aside>
          <img className='w-12' src={image} alt="" />
           <p>
-          Human Resources
+            Human Resources
             <br />
             Providing reliable tech since 1992
           </p>

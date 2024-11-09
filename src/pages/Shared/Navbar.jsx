@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import profile from "../../assets/Navbar/profile.png";
 
 const Navbar = () => {
   const navOption = <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/contact'>Contact us</Link></li>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/contact'>Contact us</NavLink></li>
+        {/* <li><NavLink to=''>Dashboard</NavLink></li> */}
+        <li><NavLink to='/login'>Login</NavLink></li>
   </>
   return (
     <div>
@@ -38,9 +40,11 @@ const Navbar = () => {
       {navOption}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end avatar">
+  <div className="w-9 rounded-full">
+    <img src={profile} />
   </div>
+</div>
 </div>
     </div>
   );
