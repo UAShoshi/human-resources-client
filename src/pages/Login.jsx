@@ -1,9 +1,46 @@
 import { Link } from 'react-router-dom';
 import login1 from '../assets/Navbar/login.jpg';
 import { Helmet } from 'react-helmet-async';
+import { useContext } from 'react';
+import { AuthContext } from '../provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 
 const Login = () => {
+  const { signIn } = useContext(AuthContext);
+
+  const handleLogin = e =>{
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+
+    signIn(email, password)
+    .then(result =>{
+      const user = result.user;
+      console.log(user);
+      Swal.fire({
+        title: "User Login Successful.",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
+      });
+    });
+  }
+
+
   return (
     <div className="hero min-h-screen">
     <Helmet>
@@ -14,7 +51,7 @@ const Login = () => {
       <img className="w-2/3" src={login1} alt="" />
     </div>
     <div className="card shrink-0 w-full max-w-sm border border-base-300 bg-base-100">
-      <form className="card-body">
+      <form onSubmit={handleLogin} className="card-body">
       <h1 className="text-4xl font-bold text-center">Login</h1>
         <div className="form-control">
           <label className="label">

@@ -1,10 +1,31 @@
 import { Helmet } from "react-helmet-async";
 import login2 from '../assets/Navbar/login.jpg';
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { useContext } from "react";
+import { AuthContext } from "../provider/AuthProvider";
 
 
 
 const Signup = () => {
+  
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const { createUser } = useContext(AuthContext);
+
+  const onSubmit = data => {
+    console.log(data);
+    createUser(data.email, data.password)
+      .then(result => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+      })
+      // .catch(error => console.error(error))
+  };
+
   return (
     <div className="hero min-h-screen">
     <Helmet>
@@ -15,49 +36,49 @@ const Signup = () => {
         <img className="w-2/3" src={login2} alt="" />
       </div>
       <div className="card shrink-0 w-full max-w-sm border border-base-300 bg-base-100">
-        <form className="card-body">
+        <form onSubmit={handleSubmit(onSubmit)} className="card-body">
           <h1 className="text-4xl font-bold text-center">Sign Up</h1>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Name</span>
             </label>
-            <input type="text" name='name' placeholder="Your name" className="input input-bordered" />
-            {/* {errors.name && <span className="text-red-600">Name is required.</span>}
+            <input type="text" {...register("name", { required: true })} placeholder="Your name" className="input input-bordered" />
+            {errors.name && <span className="text-red-600">Name is required.</span>}
           </div>
           <div className="form-control">
-            <label className="label">
-              <span className="label-text">PhotoURL</span>
-            </label>
-            <input type="text" placeholder="Your PhotoURL" className="input input-bordered" />
-            {errors.name && <span className="text-red-600">PhotoURL is required.</span>} */}
-          </div>
+              <label className="label">
+                <span className="label-text">PhotoURL</span>
+              </label>
+              <input type="text" {...register("photoURL", { required: true })} placeholder="Your PhotoURL" className="input input-bordered" />
+              {errors.name && <span className="text-red-600">PhotoURL is required.</span>}
+            </div>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>
             </label>
-            <input type="email" name='email' placeholder="Your email" className="input input-bordered" />
-            {/* {errors.email && <span className="text-red-600">Email is required.</span>} */}
+            <input type="email" {...register("email", { required: true })}placeholder="Your email" className="input input-bordered" />
+            {errors.email && <span className="text-red-600">Email is required.</span>}
           </div>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
-            <input type="password" name='password'  placeholder="Your password" className="input input-bordered" />
-            {/* {errors.password?.type === 'required' &&
-              <p className="text-red-600">password is required.</p>} */}
-            {/* {errors.password?.type === 'minLength' &&
+            <input type="password" {...register("password", { required: true, minLength: 6, maxLength: 20, pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/ })} placeholder="Your password" className="input input-bordered" />
+            {errors.password?.type === 'required' &&
+              <p className="text-red-600">password is required.</p>}
+            {errors.password?.type === 'minLength' &&
               <p className="text-red-600">password must be 6 characters.</p>}
             {errors.password?.type === 'maxLength' &&
               <p className="text-red-600">password must be less than 20 characters.</p>}
             {errors.password?.type === 'pattern' &&
-              <p className="text-red-600">Password must have one uppercase one lowercase one number and special characters.</p>} */}
+              <p className="text-red-600">Password must have one uppercase one lowercase one number and special characters.</p>}
           </div>
           <div className="form-control mt-6">
             <input className="btn bg-[#FF902F] text-white" type="Submit" value="Sign up" />
           </div>
           {/* <SocialLogin></SocialLogin> */}
         </form>
-        <p className="text-center text-[#FF902F]">Already registered? <Link to="/login" className="text-[#FF902F] font-semibold">Go to log in</Link></p>
+        <p className="text-center text-[#FF902F]">Already registered? <Link to="/login" className="text-[#FF902F] font-semibold">Go to login</Link></p>
       </div>
     </div>
   </div>
