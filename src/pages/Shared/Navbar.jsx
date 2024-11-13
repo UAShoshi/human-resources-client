@@ -15,12 +15,13 @@ const Navbar = () => {
 
   const navOption = <>
         <li><NavLink to='/'>Home</NavLink></li>
+        {/* <li><NavLink to='/secret'>Secret</NavLink></li> */}
+        <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
         <li><NavLink to='/contact'>Contact us</NavLink></li>
-        {/* <li><NavLink to='/'>Dashboard</NavLink></li> */}
 
         {
-      user?
-        <>
+      user? <>
+        <span>{user?.displayName}</span>
         <li className="border-0 bg-black text-white rounded-md ml-3" onClick={handleLogout}><NavLink to='/login'>Logout</NavLink></li>
         </> : <li className="border-0 bg-black text-white rounded-md ml-3"><NavLink to='/login'>login</NavLink></li>
     }
