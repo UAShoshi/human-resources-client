@@ -9,6 +9,8 @@ import Signup from "../pages/Signup";
 import Secret from "../pages/Shared/Secret";
 import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../Layout/Dashboard";
+import WorkSheet from "../pages/Dashboard/WorkSheet/WorkSheet";
+import PaymentHistory from "../pages/Dashboard/PaymentHistory/PaymentHistory";
 
 
 
@@ -37,10 +39,22 @@ export const router = createBrowserRouter([
         path: '/secret',
         element: <PrivateRoute><Secret></Secret></PrivateRoute>
       },
-      {
-        path: '/dashboard',
-        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
-      }
+     
     ]
   },
+  {
+    path: 'dashboard',
+    element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+    children: [
+      // Employee Only routes
+      {
+        path: 'workSheet',
+        element: <WorkSheet></WorkSheet>
+      },
+      {
+        path: 'paymentHistory',
+        element: <PaymentHistory></PaymentHistory>
+      }
+    ]
+  }
 ]);
