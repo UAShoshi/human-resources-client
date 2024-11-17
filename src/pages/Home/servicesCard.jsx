@@ -12,7 +12,7 @@ const ServicesCard = ({service}) => {
 			<h2 className="text-3xl font-semibold tracking-wide">{serviceName}</h2>
 			<p className="dark:text-gray-800">{serviceDescription}</p>
 		</div>
-    <button className="btn w-full p-3 hover:bg-[#F9531D]  btn-success text-white bg-[#FF902F] border-none">View Detail</button>
+    <button className="btn w-full p-3 hover:bg-[#F9531D] text-white bg-[#FF902F] border-none">View Detail</button>
 	</div>
     </div>
   );

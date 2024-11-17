@@ -5,10 +5,13 @@ import { MdContactPhone, MdPayment, MdWork } from "react-icons/md";
 
 
 const Dashboard = () => {
+  // const isAdmin = useAdmin();
+  // bg-[#FF902F]
+
   return (
     <div className="flex">
-      <div className="w-52 drawer drawer-content min-h-screen bg-base-200">
-        <ul className="menu bg-base-200 text-base-content font-bold min-h-full w-70 p-4">
+      <div className="w-52 drawer drawer-content min-h-screen bg-[#FF902F]">
+        <ul className="menu bg-[#FF902F] font-bold min-h-full w-70 p-4">
           {
             'isAdmin' ? <>
               {/* Sidebar content here */}
@@ -25,7 +28,7 @@ const Dashboard = () => {
             </>
               :
               <>
-                {/* user NavBar Sidebar content here */}
+                {/* NavBar Sidebar content here */}
                 <li className="mb-5">
                   <NavLink to={'/dashboard/all-employee-list'}>
                     User Home</NavLink>
