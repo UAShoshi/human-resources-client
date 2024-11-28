@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import Swal from "sweetalert2";
+import SocialLogin from "../component/SocialLogin";
 
 
 
@@ -97,7 +98,7 @@ const Signup = () => {
           <div className="form-control mt-6">
             <input className="btn bg-[#FF902F] text-white" type="Submit" value="Sign up" />
           </div>
-          {/* <SocialLogin></SocialLogin> */}
+          <SocialLogin></SocialLogin>
         </form>
         <p className="text-center text-[#FF902F]">Already registered? <Link to="/login" className="text-[#FF902F] font-semibold">Go to login</Link></p>
       </div>

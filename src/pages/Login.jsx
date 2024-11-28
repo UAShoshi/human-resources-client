@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { useContext } from 'react';
 import { AuthContext } from '../provider/AuthProvider';
 import Swal from 'sweetalert2';
+import SocialLogin from '../component/SocialLogin';
 
 
 const Login = () => {
@@ -71,16 +72,11 @@ const Login = () => {
           </label>
           <input type="password" name='password' placeholder="Your password" className="input input-bordered" required />
         </div>
-        {/* <div className="form-control">
-          <label className="label">
-          <LoadCanvasTemplate />
-          </label>
-          <input onBlur={handleValidateCaptcha} type="text" name='captcha' placeholder="Type the captcha above" className="input input-bordered" required />
-        </div> */}
+       
         <div className="form-control mt-6">
           <input className="btn bg-[#FF902F] text-white" type="Submit" value="Sign In" />
         </div>
-        {/* <SocialLogin></SocialLogin> */}
+        <SocialLogin></SocialLogin>
       </form>
       <p className="text-center text-[#FF902F]">New here? <Link to="/signup" className="text-[#FF902F] font-semibold">Create a New Account</Link></p>
     </div>

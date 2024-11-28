@@ -24,9 +24,9 @@ const PaymentHistory = () => {
           <thead>
             <tr className="bg-[#F9531D] text-white">
               <th></th>
-              <th>Task</th>
-              <th>Hours Worked</th>
-              <th>Date</th>
+              <th>Month</th>
+              <th>Amount</th>
+              <th>Transaction Id</th>
             </tr>
           </thead>
           <tbody>
