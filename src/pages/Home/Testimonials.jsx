@@ -15,7 +15,7 @@ const Testimonials = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch('https://human-resources-server-aym9l25qy-coffee-makers-projects.vercel.app/reviews')
+    fetch('https://human-resources-server.vercel.app/reviews')
       .then(res => res.json())
       .then(data => setReviews(data))
   }, [])

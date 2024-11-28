@@ -17,7 +17,7 @@ const WorkSheet = () => {
 
 
   useEffect(() => {
-    fetch('https://human-resources-server-aym9l25qy-coffee-makers-projects.vercel.app/workEntries')
+    fetch('https://human-resources-server.vercel.app/workEntries')
     .then(res => res.json())
     .then(data => {
       setWorkEntries(data)})
@@ -38,7 +38,7 @@ const WorkSheet = () => {
       number: parseFloat(data.number),
       date: data.date
     };
-    fetch('https://human-resources-server-aym9l25qy-coffee-makers-projects.vercel.app/workEntries', {
+    fetch('https://human-resources-server.vercel.app/workEntries', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
