@@ -8,35 +8,35 @@
   },
   {
     "_id": "002",
-    "serviceImage": "../src/assets/home/training.jfif",
+    "serviceImage": "../src/assets/home/training.jpg",
     "serviceName": "Employee Training",
     "serviceDescription": "Custom training programs to enhance workforce skills.",
     "servicePrice": "$150"
   },
   {
     "_id": "003",
-    "serviceImage": "../src/assets/home/payroll.jfif",
+    "serviceImage": "../src/assets/home/payroll.jpg",
     "serviceName": "Payroll Management",
     "serviceDescription": "Efficient payroll processing and benefits administration.",
     "servicePrice": "$300"
   },
   {
     "_id": "004",
-    "serviceImage": "../src/assets/home/performance.webp",
+    "serviceImage": "../src/assets/home/performance.jpg",
     "serviceName": "Performance Management",
     "serviceDescription": "Boost employee productivity with performance evaluation tools.",
     "servicePrice": "$250"
   },
   {
     "_id": "005",
-    "serviceImage": "../src/assets/home/compliance.jfif",
+    "serviceImage": "../src/assets/home/compliance.jpg",
     "serviceName": "Compliance & Legal Advisory",
     "serviceDescription": "Ensure adherence to labor laws and regulatory standards.",
     "servicePrice": "$350"
   },
   {
     "_id": "006",
-    "serviceImage": "../src/assets/home/compensation.jfif",
+    "serviceImage": "../src/assets/home/compensation.jpg",
     "serviceName": "Compensation Planning",
     "serviceDescription": "Develop competitive salary structures to attract talent.",
     "servicePrice": "$280"

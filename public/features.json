@@ -1,62 +1,62 @@
 [
   {
     "_id": "1",
-    "image": "../src/assets/Features/attendance.webp",
+    "image": "../src/assets/Features/attendance.jpg",
     "name": "Attendance Form & Log"
   },
   {
     "_id": "2",
-   "image": "../src/assets/Features/department.webp",
+   "image": "../src/assets/Features/department.jpg",
     "name": "Department Management" 
   },
   {
     "_id": "3",
-    "image": "../src/assets/Features/performance-appraisal.webp",
+    "image": "../src/assets/Features/performance-appraisal.jpg",
      "name": "Performance Appraisal Record" 
    },
    {
     "_id": "4",
-    "image": "../src/assets/Features/record.webp",
+    "image": "../src/assets/Features/record.jpg",
      "name": "Record Of Leave Application" 
    },
    {
     "_id": "5",
-    "image": "../src/assets/Features/notice.webp",
+    "image": "../src/assets/Features/notice.jpg",
      "name": "Notice Board For Employees" 
    },
    {
     "_id": "6",
-    "image": "../src/assets/Features/year.webp",
+    "image": "../src/assets/Features/year.jpg",
      "name": "Year-wise Award system" 
    },
    {
     "_id": "7",
-    "image": "../src/assets/Features/power.webp",
+    "image": "../src/assets/Features/power.jpg",
      "name": "Power Pack Recruitment Tool" 
    },
    {
     "_id": "8",
-    "image": "../src/assets/Features/rules.webp",
+    "image": "../src/assets/Features/rules.jpg",
      "name": "Rules Setup" 
    },
    {
     "_id": "9",
-    "image": "../src/assets/Features/point-setting.webp",
+    "image": "../src/assets/Features/point-setting.jpg",
      "name": "Rules Setup" 
    },
    {
     "_id": "10",
-    "image": "../src/assets/Features/mobile-app.webp",
+    "image": "../src/assets/Features/mobile-app.jpg",
      "name": "Rules Setup" 
    },
    {
     "_id": "11",
-    "image": "../src/assets/Features/employee-salary.webp",
+    "image": "../src/assets/Features/employee-salary.jpg",
      "name": "Rules Setup" 
    },
    {
     "_id": "12",
-    "image": "../src/assets/Features/project-management.webp",
+    "image": "../src/assets/Features/project-management.jpg",
      "name": "Point Setting" 
    }
 ]
